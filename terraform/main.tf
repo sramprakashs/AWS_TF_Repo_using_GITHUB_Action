@@ -25,7 +25,5 @@ terraform {
     bucket  = "ramp-s3-bucket"
     key     = "terraform/ec2/terraform.tfstate"
     region  = "us-east-1"
-    dynamodb_table = "my-terraform-lock-table"
-    encrypt = true
   }
 }
