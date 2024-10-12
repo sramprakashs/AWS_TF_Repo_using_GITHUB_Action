@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "ami_id" {
   type    = string
-  default = "ami-0c55b159cbfafe1f0" # Example AMI, update based on your requirement
+  default = "ami-0866a3c8686eaeeba" # Example AMI, update based on your requirement
 }
 
 variable "instance_type" {
