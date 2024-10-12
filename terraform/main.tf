@@ -19,3 +19,13 @@ output "instance_id" {
 output "public_ip" {
   value = aws_instance.example.public_ip
 }
+
+terraform {
+  backend "s3" {
+    bucket         = "your-bucket-name"
+    key            = "terraform/ec2/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-lock"
+    encrypt        = true
+  }
+}
