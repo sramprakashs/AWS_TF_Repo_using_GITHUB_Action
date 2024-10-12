@@ -22,10 +22,9 @@ output "public_ip" {
 
 terraform {
   backend "s3" {
-    bucket         = "ramp-s3-bucket"
-    key            = "terraform/ec2/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-lock"
-    encrypt        = true
+    bucket  = "your-bucket-name"
+    key     = "terraform/ec2/terraform.tfstate"
+    region  = "us-east-1"
+    encrypt = true
   }
 }
