@@ -22,7 +22,7 @@ output "public_ip" {
 
 terraform {
   backend "s3" {
-    bucket  = "your-bucket-name"
+    bucket  = "ramp-s3-bucket"
     key     = "terraform/ec2/terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
